@@ -1,0 +1,60 @@
+<h1>Orders</h1>
+
+<div class="form-group">
+  <h2><span>Table:</span></h2>
+  <select (change)="selectChangeHandler($event)">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+  </select>
+  
+</div>
+
+<div class="form-group">
+  <h2><span>Item:</span></h2>
+  <select (change)="selectChangeHandler($event)">
+    <option value="Chicken">Chicken</option>
+    <option value="Beef">Beef</option>
+    <option value="Pork">Pork</option>
+  </select>
+ 
+</div>
+
+
+
+<div class="form-group">
+  <h2><span>Size:</span></h2>
+  <select (change)="selectChangeHandler($event)">
+    <option value="small">small</option>
+    <option value="medium">Medium</option>
+    <option value="large">large</option>
+  </select>
+  
+  
+</div>
+
+<div class="form-group">
+  <h2><span>Spice:</span></h2>
+  <select (change)="selectChangeHandler($event)">
+    <option value="None">None</option>
+    <option value="Mild">Mild</option>
+    <option value="spicy">spicy</option>
+  </select>
+ 
+  
+</div>
+
+<div class="form-group">
+  <h2><span>Accompaniments:</span></h2>
+  <select (change)="selectChangeHandler($event)">
+    <option value="Ugali">Ugali</option>
+    <option value="Rice">Rice</option>
+    <option value="Fries">Fries</option> 
+  </select> 
+  
+
+  <p><span>You selected:</span><b>{{item | json}}</b></p>
+  <button (click)="sendItem()"> send</button>
+</div>
